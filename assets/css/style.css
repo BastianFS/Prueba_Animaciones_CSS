@@ -2,25 +2,51 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: blue;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-1> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 header {
     grid-area: header;
-    background-color: red;
+    background-color: rgb(192, 20, 20);
 }
 
 aside {
     grid-area: aside;
-    background-color: grey;
+    background-color: rgb(153, 152, 152);
+    font-family: "Montserrat";
+
 }
 
 figure {
     grid-area: gallery;
     background-color: black;
+
 }
 
 footer {
     grid-area: footer;
     background-color: red;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
 }
 
 @media(min-width: 992px) {
@@ -41,4 +67,118 @@ footer {
             "gallery"
             "footer";
     }
+    aside{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    figure{
+        display: grid;
+        justify-content: center;
+        grid-column: auto;
+        row-gap: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    font-family: "Bebas Neue";
+    gap: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+.product_logo{
+    display: flex;
+    align-items: center;
+}
+.men_lat_h {
+    padding: 10px;
+}
+.products_list{
+    padding-left: 45px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.products_list2{
+    padding-left: 15px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.img1{
+    background-image: url(../img/gibson_sg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img2{
+    background-image: url(../img/gibson_explorer.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img3{
+    background-image: url(../img/gibson_les_paul.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img4{
+    background-image: url(../img/fender_stratocaster.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img5{
+    background-image: url(../img/fender_telecaster.webp);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img6{
+    background-image: url(../img/fender_jazzmaster.webp);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img7{
+    background-image: url(../img/esp_arrow.webp);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img8{
+    background-image: url(../img/esp_eclipse.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.img9{
+    background-image: url(../img/esp_horizon.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+}
+.a_social{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.div_social{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-left: 20px;
 }
