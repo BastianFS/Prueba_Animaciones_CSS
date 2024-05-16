@@ -2,25 +2,30 @@
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: hotpink;
 }
-a:active{
+
+a:active {
     color: blue;
 }
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .montserrat-1> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -38,7 +43,6 @@ aside {
 figure {
     grid-area: gallery;
     background-color: black;
-
 }
 
 footer {
@@ -57,6 +61,14 @@ footer {
             "aside gallery"
             "footer footer";
     }
+
+    figure {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 40px;
+        justify-content: space-around;
+        padding: 30px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -67,12 +79,14 @@ footer {
             "gallery"
             "footer";
     }
-    aside{
+
+    aside {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    figure{
+
+    figure {
         display: grid;
         justify-content: center;
         grid-column: auto;
@@ -91,94 +105,241 @@ footer {
     color: white;
     padding-bottom: 10px;
 }
-.product_logo{
+
+.product_logo {
     display: flex;
     align-items: center;
 }
+
 .men_lat_h {
     padding: 10px;
 }
-.products_list{
+
+.products_list {
     padding-left: 45px;
     list-style: none;
     padding-bottom: 10px;
 }
-.products_list2{
+
+.products_list2 {
     padding-left: 15px;
     list-style: none;
     padding-bottom: 10px;
 }
-.img1{
+
+.img1 {
     background-image: url(../img/gibson_sg.jpg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img2{
+.img1:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img2 {
     background-image: url(../img/gibson_explorer.jpeg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img3{
+.img2:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img3 {
     background-image: url(../img/gibson_les_paul.jpeg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img4{
+.img3:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img4 {
     background-image: url(../img/fender_stratocaster.jpeg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move2;
+    animation-duration: 6s;
+    animation-direction: move2;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img5{
+.img4:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img5 {
     background-image: url(../img/fender_telecaster.webp);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move2;
+    animation-duration: 6s;
+    animation-direction: move2;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img6{
+.img5:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img6 {
     background-image: url(../img/fender_jazzmaster.webp);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move2;
+    animation-duration: 6s;
+    animation-direction: move2;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img7{
+.img6:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img7 {
     background-image: url(../img/esp_arrow.webp);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img8{
+.img7:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img8 {
     background-image: url(../img/esp_eclipse.jpeg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.img9{
+.img8:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.img9 {
     background-image: url(../img/esp_horizon.jpg);
     background-size: cover;
     background-position: center;
     width: 250px;
     height: 300px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-radius: 3%;
 }
-.a_social{
+.img9:hover{
+    animation-name: enlarge, color_change;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.a_social {
     color: white;
     font-family: "Montserrat";
     font-size: 15px;
 }
-.div_social{
+
+.div_social {
     display: flex;
     gap: 5px;
     align-items: center;
     padding-left: 20px;
+}
+
+@keyframes color_change {
+    from {
+        filter: grayscale(0%);
+    }
+
+    50% {
+        filter: grayscale(100%);
+    }
+
+    to {
+        filter: grayscale(0%);
+    }
+}
+@keyframes move{
+    from{transform: translateX(-5px);
+    }
+    50%{transform: translateX(5px);
+    }
+    to{transform: translateX(-5px);
+    }
+}
+@keyframes move2{
+    from{transform: translateX(5px);
+    }
+    50%{transform: translateX(-5px);
+    }
+    to{transform: translateX(5px);
+    }
+}
+@keyframes enlarge{
+    from{width: 100%;
+         height:100%;
+    }
+    to{width: 105%;
+        height:105%;
+    }
 }
